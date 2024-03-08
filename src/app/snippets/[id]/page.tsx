@@ -24,7 +24,10 @@ export default async function SnippetShowPage(props: SnippetShowPageProps) {
       <div className="flex m-4 justify-between items-center">
         <h1 className="text-xl font-bold">{snippet.title}</h1>
         <div className="flex gap-4">
-          <Link href={`/snippets/${snippet.id}`} className="p-2 border rouded">
+          <Link
+            href={`/snippets/${snippet.id}/edit`}
+            className="p-2 border rouded"
+          >
             Edit
           </Link>
           <form action={deleteSnippetAction}>
